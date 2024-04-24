@@ -66,15 +66,6 @@ class RetroAchievements
         ]);
     }
 
-    public function getFeedFor(string $user, int $count, int $offset = 0): mixed
-    {
-        return $this->getApiUrl('API_GetFeed.php', [
-            'u' => $user,
-            'c' => $count,
-            'o' => $offset,
-        ]);
-    }
-
     public function getUserRankAndScore(string $user): mixed
     {
         return $this->getApiUrl('API_GetUserRankAndScore.php', [

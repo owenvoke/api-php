@@ -1,23 +1,21 @@
 {
     "name": "retroachievements/api",
-    "description": "RetroAchievements Web API Client",
     "type": "library",
+    "description": "RetroAchievements Web API Client",
+    "license": "MIT",
     "keywords": [
-        "RetroAchievmenets",
+        "RetroAchievements",
         "retro",
         "achievements",
         "API"
     ],
     "homepage": "https://github.com/retroachievements/api-php",
-    "license": "MIT",
     "require": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "guzzlehttp/guzzle": "^6.5.8|^7.8.1"
     },
-    "require-dev": {},
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "sort-packages": true
+    "require-dev": {
+        "symfony/var-dumper": "^6.4|^7.0"
     },
     "autoload": {
         "psr-4": {
@@ -29,5 +27,10 @@
             "Tests\\": "tests"
         }
     },
-    "scripts": {}
+    "scripts": {},
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
